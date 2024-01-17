@@ -17,7 +17,7 @@ The most important math for machine learning is linear algebra. I recommend the 
 
 ### "Essence of linear algebra" 3Blue1Brown playlist
 
-{% include youtube_embed.html id="fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1" %}
+https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1
 
 
 This is an excellent playlist that focuses on building intuition for linear algebra. It purposefully avoids computation and instead focuses on the geometric interpretation of linear algebra. I recommend watching this playlist before taking a linear algebra course.
@@ -28,8 +28,27 @@ https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=1
 
 Gilbert Strang is a legendary MIT professor. This was one of the original courses posted to MIT OpenCourseWare and is still one of the best. It is a full course on linear algebra, and it is a great resource for learning the computational side of linear algebra. I recommend watching this playlist after watching the 3Blue1Brown playlist. 
 
+## Probability and Statistics
+
+The second most import math for ML is probability and statistics. I recommend the following resources:
+
+### "Bayes theorem, the geometry of changing beliefs" by 3Blue1Brown
+
+{% include youtube_embed.html id="HZGCoVF3YvM" %}
+
+This video is a great introduction to Bayes theorem, one of the most important formulas in statistics. It breaks down each part of the formula, why is it true (visually), and when is it useful.
+
+### "An Introduction to Statistical Learning: with Applications in Python" by James et al.
+
+https://www.statlearning.com/
+
+This is an excellent book for the foundations of statistics and ML. It is one of the most advanced resources on this list. It is a full book, so it is a big time commitment. It is free to read online and also comes with Python code examples. It covers a broad range of topics, including linear regression, logistic regression, decision trees, random forests, support vector machines, neural networks, clustering, and more.
+
+The first edition of this book, ICLR, covers the same material but is for the R programming language. I definitely recommend the new Python version, ISLP.
 
 ## Calculus
+
+The third most important math for ML is calculus. It is the basis for understanding backpropagation.
 
 ### "Essence of calculus" 3Blue1Brown playlist
 
@@ -45,21 +64,6 @@ https://www.youtube.com/playlist?list=PLBE9407EA64E2C318&index=1
 Another excellent playlist from Gilbert Strang. This is a more advanced playlist but it is still not a full course. It is a great resource for building intuition for calculus. I recommend watching this playlist after watching the 3Blue1Brown playlist.
 
 
-## Probability and Statistics
-
-### "Bayes theorem, the geometry of changing beliefs" by 3Blue1Brown
-
-https://www.youtube.com/watch?v=HZGCoVF3YvM
-
-This video is a great introduction to Bayes theorem, one of the most important formulas in statistics. It breaks down each part of the formula, why is it true (visually), and when is it useful.
-
-### "An Introduction to Statistical Learning: with Applications in Python" by James et al.
-
-https://www.statlearning.com/
-
-This is an excellent book for the foundations of statistics and ML. It is one of the most advanced resources on this list. It is a full book, so it is a big time commitment. It is free to read online and also comes with Python code examples. It covers a broad range of topics, including linear regression, logistic regression, decision trees, random forests, support vector machines, neural networks, clustering, and more.
-
-The first edition of this book, ICLR, covers the same material but is for the R programming language. I definitely recommend the new Python version, ISLP.
 
 # Programming
 
