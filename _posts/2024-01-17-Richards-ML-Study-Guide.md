@@ -2,6 +2,9 @@
 layout: post
 title: Richard's ML Study Guide
 subtitle: A collection of study materials for machine learning.
+cover-img: /assets/img/humanoid_robot_in_a_cap_and_gown.png
+thumbnail-img: /assets/img/humanoid_robot_post_it.png
+share-img: /assets/img/humanoid_robot_in_a_cap_and_gown.png
 tags: [code]
 comments: true
 ---
