@@ -20,7 +20,7 @@ author: Richard Decal
 ###############################################
 
 navbar-links:
-  Blog: ""
+  Blog: "/"
   Portfolio:
     - Code: "https://github.com/crypdick"
     - Publications: "https://scholar.google.com/citations?user=4ODJ78oAAAAJ"
