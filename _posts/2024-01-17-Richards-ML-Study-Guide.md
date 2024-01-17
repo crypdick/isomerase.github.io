@@ -17,7 +17,8 @@ The most important math for machine learning is linear algebra. I recommend the 
 
 ### "Essence of linear algebra" 3Blue1Brown playlist
 
-https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1
+{% include youtube_embed.html id="fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1" %}
+
 
 This is an excellent playlist that focuses on building intuition for linear algebra. It purposefully avoids computation and instead focuses on the geometric interpretation of linear algebra. I recommend watching this playlist before taking a linear algebra course.
 
