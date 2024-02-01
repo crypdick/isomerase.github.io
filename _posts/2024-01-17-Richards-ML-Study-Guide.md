@@ -20,13 +20,12 @@ The most important math for machine learning is linear algebra. I recommend the 
 
 ### ["Essence of linear algebra" 3Blue1Brown playlist](https://www.youtube.com/watch?v=fNk_zzaMoSs&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&index=1)
 
-This is an excellent playlist that focuses on building intuition for linear algebra. It purposefully avoids computation and instead focuses on the geometric interpretation of linear algebra. I recommend watching this playlist before taking a linear algebra course.
+This is an excellent playlist that focuses on building intuition for linear algebra. It purposefully avoids computation and instead focuses on the geometric interpretation of linear algebra. I recommend starting here.
 
 ### [Gilbert Strang's lectures on Linear Algebra](https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=1)
 
 
-
-Gilbert Strang is a legendary MIT professor. This was one of the original courses posted to MIT OpenCourseWare and is still one of the best. It is a full course on linear algebra, and it is a great resource for learning the computational side of linear algebra. I recommend watching this playlist after watching the 3Blue1Brown playlist. 
+Gilbert Strang is a legendary MIT professor. This was one of the original courses posted to MIT OpenCourseWare and is still one of the best. It is a full-length and comprehensive course on linear algebra.
 
 ## Probability and Statistics
 
@@ -34,15 +33,14 @@ The second most import math for ML is probability and statistics. I recommend th
 
 ### ["Bayes theorem, the geometry of changing beliefs" by 3Blue1Brown](https://www.youtube.com/watch?v=HZGCoVF3YvM)
 
-This video is a great introduction to Bayes theorem, one of the most important formulas in statistics. It breaks down each part of the formula, why is it true (visually), and when is it useful.
+This video is a great introduction to Bayes theorem, one of the most important formulas in statistics. It breaks down each part of the formula, a visual proof of why it is true, and when is it useful.
 
 ### ["An Introduction to Statistical Learning: with Applications in Python" by James et al.](https://www.statlearning.com/)
 
 
+This is an excellent book for the foundations of statistics and ML. It is a full book, and one of the most advanced resources on the list, so it is a big time commitment. It assumes a strong background in linear algebra. It covers a broad range of topics, including linear regression, logistic regression, decision trees, random forests, support vector machines, neural networks, clustering, and more.
 
-This is an excellent book for the foundations of statistics and ML. It is one of the most advanced resources on this list. It is a full book, so it is a big time commitment. It is free to read online and also comes with Python code examples. It covers a broad range of topics, including linear regression, logistic regression, decision trees, random forests, support vector machines, neural networks, clustering, and more.
-
-The first edition of this book, ICLR, covers the same material but is for the R programming language. I definitely recommend the new Python version, ISLP.
+It is free to read online and also comes with Python code examples. The first edition of this book, ICLR, covers the same material but is for the R programming language. I definitely recommend the new Python version, ISLP.
 
 ## Calculus
 
@@ -51,15 +49,13 @@ The third most important math for ML is calculus. It is the basis for understand
 ### ["Essence of calculus" 3Blue1Brown playlist](https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=1)
 
 
-This is another excellent series from 3Blue1Brown. It focuses on building intuition for calculus, building up using thought experiments in a way that makes you feel like you are discovering calculus for yourself. Like his "Essence of Linear Algebra" playlist, it focuses on intuition rather than computation. I recommend watching this playlist before taking a calculus course.
+This is another excellent series from 3Blue1Brown. Like his "Essence of Linear Algebra" playlist, this one focuses on building intuition for calculus rather than computation. It builds up using thought experiments and visuals in a way that makes you feel like you could've discovered calculus for yourself. I recommend starting here.
 
 
 ### [Gilbert Strang's "Highlights of Calculus" playlist](https://www.youtube.com/playlist?list=PLBE9407EA64E2C318&index=1)
 
 
-
-Another excellent playlist from Gilbert Strang. This is a more advanced playlist but it is still not a full course. It is a great resource for building intuition for calculus. I recommend watching this playlist after watching the 3Blue1Brown playlist.
-
+I love Gilbert Strang and this is another excellent playlist. This isn't a full course, but it still a deep dive on calculus. It helped me develop a deeper intuition for calculus.
 
 
 # Programming
@@ -71,25 +67,23 @@ Python is the most popular language for machine learning. This is really the onl
 ### ["Automate the Boring Stuff with Python" by Al Sweigart](https://automatetheboringstuff.com/)
 
 
+I believe that the best way to learn anything is with project-based learning. The nice thing about projects learning is that concrete goals motivate learning in a way that abstract academic texts can't.
 
-I believe that the best way to learn anything is with project-based learning. The nice thing about project-based learning is that you it helps you stay motivated to learn because you are working towards a tangible goal.
-I recommend this book because each chapter is a project that gives you a useful tool that you can use in your daily life. I think everyone should read it for basic programming literacy.
+I like that each chapter is a project that gives you a useful tool that you can use in your daily life. I think everyone should read it for basic programming literacy.
 
 It is also free to read online.
 
 ### [Codecademy Python 3 course](https://www.codecademy.com/learn/learn-python-3)
 
-
-
-Codecademy is a nice because it gives you interactive programming challenges, and helps you learn by doing. This is a course you can complete in a few days and it will give you a good foundation in Python.
+Codecademy is nice because it gives you interactive programming challenges, and helps by pointing out errors. This is a course you can complete in a few days and it will give you a good foundation in Python. It's also nice that it gives you a virtual Python terminal in your browser, so you don't have to install anything before you start learning how to code.
 
 ## Other languages
 
-Some other languages that are popular for machine learning are R and Julia. 
+The other main programming languages for machine learning are R and Julia. 
 
-Julia is a newer language purpose-built for machine learning, and it is gaining popularity. I think it is an elegant alternative to Python, but I can't recommend learning it because almost everyone uses Python. 
+Julia is a newer language purpose-built for data science, and it is gaining popularity. I think it is an elegant alternative to Python, however I can't recommend learning it because almost everyone uses Python. 
 
-R is an older language that is popular in statistics. I really hate R, and I don't recommend learning it. It is a very ugly language, and it is not as generally useful as Python. It does, however, have a tremendous amount of statistical packages. If you are doing a lot of statistics, you may want to learn R. Otherwise, I recommend sticking with Python.
+R is an older language that is popular in statistics. I really hate R, and I don't recommend learning it. It is an inelegant language, and it is not as generally useful as Python. I think starting to code with R will teach you terrible coding practices. It does, however, have a tremendous amount of statistical packages. If you are doing a lot of pure statistics, you may want to learn R. Otherwise, I recommend sticking with Python, especially if you are more interested in deep learning.
 
 # Machine Learning
 
@@ -98,22 +92,19 @@ R is an older language that is popular in statistics. I really hate R, and I don
 ### ["Machine Learning Engineering for Production (MLOps)" course by Andrew Ng](https://www.youtube.com/playlist?list=PLkDaE6sCZn6GMoA0wbpJLi3t34Gd8l0aK&index=1)
 
 
-
-This playlist focuses more on the engineering side of machine learning. For example, it covers common pitfalls and challenges when deploying ML models in production. I recommend this playlist for anyone working in an ML-adjacent role, as it gives you the bigger picture of the types of challenges with ML in production.
+This playlist focuses more on the engineering side of machine learning. For example, it covers common pitfalls and challenges when deploying ML models in production. I recommend this playlist for anyone working in an ML-adjacent role, as it gives you the bigger picture of the types of challenges with ML in production. The course claims that it is an intermediate level course, but I think it is accessible for beginners.
 
 ### ["A Recipe for Training Neural Networks" by Andrej Karpathy](https://karpathy.github.io/2019/04/25/recipe/)
 
 
-
 This is a short blog post that gives some flavor of challenges in training neural networks, and why they are so difficult to diagnose as compared to other software systems.
 
-The other blog posts on Andrej Karpathy's blog are also great.
+The other blog posts on Andrej Karpathy's blog are also excellent!
 
 ### ["Hidden Technical Debt in Machine Learning Systems" by Sculley et al.](https://proceedings.neurips.cc/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
 
 
-
-This is a more academic paper that covers the challenges of ML systems in production, written by a team at Google.  One of the main points it makes is that only a small fraction of real-world ML systems are composed of actual ML code. The rest is data collection, data validation, feature extraction, serving infrastructure, monitoring, etc. This is a good paper to read if you want to understand the bigger picture of ML systems, and why they are so difficult to build.
+This is a seminal academic paper that covers the challenges of ML systems in production, written by a team at Google. One of the main points it makes is that only a small fraction of real-world ML systems are composed of actual ML code. The rest is data collection, data validation, feature extraction, serving infrastructure, monitoring, etc. This is a good paper to read if you want to understand the bigger picture of ML systems, and why they are so difficult to build.
 
 ### "Deep Learning" Coursera specialization by Andrew Ng
 
@@ -145,13 +136,13 @@ There is an MIT course that is based on this talk: ["Data-Centric AI" course by 
 
 
 
-This is a nice visual introduction to what is a neural network, as well as how backpropagation and gradient descent work.
+This is a nice visual introduction to what is a neural network, as well as how backpropagation and gradient descent work. 3Blue1Brown is always great.
 
 ### ["But what is a convolution?" by 3Blue1Brown](https://www.youtube.com/watch?v=KuXjwB4LzSA)
 
 
 
-Convolutions are a key component of convolutional neural networks, which are the most popular type of neural network for computer vision. This is a nice visual introduction to what is a convolution.
+Convolutions are a key component of convolutional neural networks, which are the most popular type of neural network for computer vision. This is a nice visual introduction to what is a convolution. Another great video by 3Blue1Brown.
 
 
 ### ["Visualizing Deep Learning" playlist by vcubingx](https://www.youtube.com/watch?v=UOvPeC8WOt8&list=PLyPKqVSnetmEOp_g_hfabuRAs9ET-shl_)
@@ -161,7 +152,7 @@ More visual intuition building for neural networks. This playlist is a bit more 
 
 ### ["Neural Networks: Zero to Hero" playlist by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
-This playlist is a "hackers guide" to neural networks. It has an emphasis on coding everything from scratch in pure Python, so while the code is not the fastest it is compact, easy to read, and easy to understand. This is a great resource for learning how neural networks work under the hood end-to-end. I haven't watched the whole playlist, but I've watched a few videos and they were great and the code is very clean.
+This playlist is a "hackers guide" to neural networks. It has an emphasis on coding everything from scratch in pure Python, so while the code is not the fastest it is compact, easy to read, and easy to understand. This is a great resource for learning how neural networks work under the hood end-to-end. I haven't watched the whole playlist, but I've watched a few videos and they were great and the code is very clean. It has more of an emphasis on LLMs.
 
 ### ["Deep Learning" book by Ian Goodfellow et al.](https://www.deeplearningbook.org/)
 
@@ -178,7 +169,6 @@ Alfredo Canziani also is [currently writing a book on deep learning theory](http
 
 
 ### ["The Little Book of Deep Learning" by François Fleuret](https://fleuret.org/francois/lbdl.html)
-
 
 
 This is a short but dense book on deep learning theory (150 pages). I haven't finished reading it but it has very nice visualization and explanations.
