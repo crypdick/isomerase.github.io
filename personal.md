@@ -22,7 +22,7 @@ For work, I use machine learning to scale ecosystem restoration using drones. <a
 ---
 ## Contact
 
-The best place to reach me is at *public at richarddecal dot c-o-m*, or via text if you have my number. I also have a [Twitter](https://twitter.com/AIjedi).
+The best place to reach me is by text, or by email at *public at richarddecal dot c-o-m*. I also have a [Twitter](https://twitter.com/bae_theorem).
 
 ## Outdoors
 
