@@ -56,7 +56,7 @@ The book emphasizes the importance of a clear purpose for events to be meaningfu
 A potluck dinner at my house.
 ```
 
-I then feed this into my first prompt ([step1-purpose](https://github.com/crypdick/LLM-gathering/blob/main/step1-purpose.md)). [Here is the raw output](https://gist.github.com/crypdick/88d97b19d69d511936e45f2d4d556a77). The summary was too wordy, so I replied `Please summarize the summary even further. Also, add something about promoting health in the purpose.` and I was mostly happy with that output. So, I edited it lightly and filled in the next section of the template:
+I then feed this into my first prompt ([step1-purpose](https://github.com/crypdick/LLM-gathering/blob/main/step1-purpose.md)). [Here is the raw output](https://gist.github.com/crypdick/88d97b19d69d511936e45f2d4d556a77). The summary was too wordy, so I replied `Please summarize the summary even further. Also, add something about promoting health in the purpose` and I was mostly happy with that output. So, I edited it lightly and filled in the next section of the template:
 
 ```markdown
 # Purpose of the event
@@ -70,7 +70,7 @@ I then feed this into my first prompt ([step1-purpose](https://github.com/crypdi
 
 The book also highlights the importance of being selective on who to invite, and how that is critical for achieving the goals of the event.
 
-I pasted in what we have so far into the next prompt ([step2-who](https://github.com/crypdick/LLM-gathering/blob/main/step2-who.md)). Here is the [raw output](https://gist.github.com/crypdick/0f3ccc5f5d11aebf49d9d3f082c159a4), which was way too wordy. I dropped the desire to discuss healthy food choices, since it seems smug and I think we can just let the food speak for itself. I also excluded picky eaters, since they probably won't enjoy unfamiliar food.
+I piped in our outputs up to now into the next prompt ([step2-who](https://github.com/crypdick/LLM-gathering/blob/main/step2-who.md)). Here is the [raw output](https://gist.github.com/crypdick/0f3ccc5f5d11aebf49d9d3f082c159a4), which was way too wordy. I dropped the desire to discuss healthy food choices, which I thought was too smug-- just let the food speak for itself. I manually excluded picky eaters, since they probably won't enjoy unfamiliar food.
 
 ```markdown
 #### For
@@ -87,13 +87,13 @@ I pasted in what we have so far into the next prompt ([step2-who](https://github
 
 # Part 3: Pop-up Rules
 
-The next prompt helps us to fill in the rules for the event ([step3-rules](https://github.com/crypdick/LLM-gathering/blob/main/step3-rules.md)) to promote inclusivity, equalization, and connection. These rules are meant to require no preparation from the guests. I didn't like most of the output, but it was a good starting point. I prompted it a few times to get more rules:
+The next prompt ([step3-rules](https://github.com/crypdick/LLM-gathering/blob/main/step3-rules.md)) helps us make rules to promote inclusivity, equalization, and connection. These rules are meant to require no preparation from the guests. I didn't like most of the output, but it was a good starting point. I made a few additional requests to course correct it a bit:
 
 - `Please add something for people who want to bring a dish which is not necessarily significant in their culture. For example, they might want to bring a dish that honors a dead relative, or a dish connected to a story or a personal travel experience`
 - `Make some additional rules to equalize the group. For example, not talking about careers. Also make some rules to increase inclusion and connections, such as only one person being allowed to speak at a time.`
 - `Add rules for the following: you are not allowed to talk to the people sitting next to you, you have to talk to the whole table; avoid sitting next to people you know`
 
-The full conversation [is here](https://gist.github.com/crypdick/7144849ee22d36ad00cffbf4fbb9d86f). Here are the rules I ended up with, which I organized into two sections: Inclusion and Connection.:
+The full conversation [is here](https://gist.github.com/crypdick/7144849ee22d36ad00cffbf4fbb9d86f). I edited that into the following rules:
 
 ```markdown
 # Rules for the event
@@ -119,7 +119,7 @@ Rules to make everyone present, promote active listening, and foster deeper conn
 
 # Part 4: Size of the event
 
-The next prompt helps us to decide on the size of the event ([step4-size](https://github.com/crypdick/LLM-gathering/blob/main/step4-size.md)). This is a bit silly to ask the LLM, but I am lazy so I asked it anyway. [The output](https://gist.github.com/crypdick/3fb461bb62238ad2559a497886f418c6) was extremely wordy, using 1954 characters just to say "12 to 15". 
+The next prompt helps us to decide on the size of the event ([step4-size](https://github.com/crypdick/LLM-gathering/blob/main/step4-size.md)). This is a bit silly to ask the LLM, but I am a silly and unreasonable person so here we are. [The output](https://gist.github.com/crypdick/3fb461bb62238ad2559a497886f418c6) was extremely wordy, using 1954 characters just to say "12 to 15". 
 
 ```markdown
 # Size of the event
@@ -130,7 +130,11 @@ I am convinced OpenAI makes their LLMs excessively chatty, since they charge by 
 
 # Part 5: Invitation
 
-Finally, the fun part: the invitation. You can view the prompt [here](https://github.com/crypdick/LLM-gathering/blob/main/step5-invitation.md). I wasn't too happy with [the output](https://gist.github.com/crypdick/a2d0350b4a67eca79dcc60a49ac3aa9e), so I had to manually weave in content from the previous steps into the invitation. I also cheated and borrowed from an invite I got from [a local event organizer](https://www.dylandavis.net/2023/09/salons-with-dylan/):
+And now, the fun part: the invitation. I piped in all our work up until this point into the invitation prompt, [step5-invitation](https://github.com/crypdick/LLM-gathering/blob/main/step5-invitation.md). 
+
+Unfortunately, I wasn't too happy with [the output](https://gist.github.com/crypdick/a2d0350b4a67eca79dcc60a49ac3aa9e), which was way too flowery for my liking. So, I manually replaced sections of the generated invitation with content from the previous steps. The final result was similar to an invite I received from [a local event organizer](https://www.dylandavis.net/2023/09/salons-with-dylan/), which I liked, so I adapted it even further to mimic that style. 
+
+Here is the final invitation:
 
 
     # A Feast of Stories with Richard
@@ -167,10 +171,11 @@ Finally, the fun part: the invitation. You can view the prompt [here](https://gi
     ## Inspiration
     The rules are inspired by the book *The Art of Gathering* by Priya Parker, and by [Dylan's Salons](https://www.dylandavis.net/2023/09/salons-with-dylan/).
 
+This unfortunately took more effort than I would have liked-- I wish ChatGPT would've been more of a help here.
 
 # Part 6: Meaningful conversations
 
-Finally, I wanted to come up with conversation starters to encourage meaningful connection. I took some of the suggestions from the previous chat and used them to seed the next prompt ([step6-meaningful-convos.md](https://github.com/crypdick/LLM-gathering/blob/main/step6-meaningful-convos.md)):
+Finally, I wanted to come up with conversation starters to encourage meaningful connection. I took some of the suggestions from the previous chat and used them to seed the next prompt ([step6-meaningful-convos.md](https://github.com/crypdick/LLM-gathering/blob/main/step6-meaningful-convos.md)).
 
 ```markdown
 - **Dish Stories**: Each dish needs a story explaining its significance. This could include a memory of a loved one, an anecdote from a travel experience, sharing a cultural tradition, or a personal connection to the dish.
@@ -182,9 +187,11 @@ The initial output had some ok, but I made a few additional idea requests:
 - (after the first output) `I liked Kitchen Mishaps, Taste of Home, Recipe Wishlist, and Wellness Wins. Please come up with more conversation topics.`
 - `Suggest a few conversation topics involving travel experiences`
 
-Here is the [full chat](https://gist.github.com/crypdick/201fe370e44e70d217e252d6aac2880b). I didn't like most of the ideas, but there were plenty of good ones for the "connection question bowl":
+Here is the [full chat (spoilers!)](https://gist.github.com/crypdick/201fe370e44e70d217e252d6aac2880b). I didn't like most of the ideas, but there were plenty of good ones for the "connection question bowl":
 
-```markdown
+<details markdown="1">
+<summary>Spoiler. Please do not view if you plan to attend my events ;)</summary>
+
 - **Kitchen Mishaps**: Share a story about a time you tried to cook a dish from another culture and it didn't go as planned. What did you learn from the experience?
 - **Taste of Home**: What is one dish that instantly transports you back to your childhood or a cherished memory? Describe the sensory experience and the emotions it evokes.
 - **Wellness Wins**: Discuss a small change you've made in your eating habits that had a big impact on your well-being. What motivated this change, and how has it influenced your lifestyle?
@@ -195,7 +202,7 @@ Here is the [full chat](https://gist.github.com/crypdick/201fe370e44e70d217e252d
 - **Potluck Perfection**: Recall a memorable dish someone else brought to a potluck that left a lasting impression on you.
 - **Market Marvels**: Describe an unforgettable visit to a local market or street food vendor in another country. What sights, smells, and tastes stood out to you? How did this experience enhance your travel?
 - **Dining Delights and Disasters**: Talk about your most memorable dining experience while traveling, whether it was delightfully surprising or a complete disaster. What made it so unforgettable?
-```
+</details>
 
 # Conclusion
 
@@ -206,3 +213,5 @@ Here are some tips:
 - *Add examples to prompts*. This helps the LLM understand what you are asking for.
 - *Break up your prompt into multiple parts*. This helps the LLM to focus on one aspect of the problem at a time.
 - *Clear your chat history in between prompts*. LLMs have a limited context window, and start to forget the conversation once it gets too long. Conversely, old chat history can sometimes distract the LLM from the current problem.
+- *Chat with the LLM to steer it*. If you don't like the output, ask the LLM to focus on a different aspect of the problem.
+- *Edit the output*. The raw outputs may suck, but the point is to get enough good ideas for a starting point. Make sure to use your own voice!
