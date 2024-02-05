@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Getting Immersed VR setup on Ubuntu
+subtitle: Documenting how to get Immersed VR working on Ubuntu Linux
+cover-img: /assets/img/DALLE-programmer-VR.png
+thumbnail-img: /assets/img/DALLE-programmer-VR.png
+share-img: /assets/img/DALLE-programmer-VR.png
+tags: [code]
 ---
 
 In my quest to perfect my "road warrior" setup, I have been experimenting with coding in VR. I have been using the Immersed VR app on my Quest 3 headset to create a virtual workspace. Unfortunately, the official Immersed documentation is not very clear on how to get Immersed VR setup on Ubuntu. Here are the steps I took to get it working. I would like to credit [this blog post by Alexandre Souza](https://devevangelista.medium.com/immersed-linux-life-bc2e2661c7aa) for pointing me in the right direction, my contribution is porting the steps to Ubuntu Linux.
