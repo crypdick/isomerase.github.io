@@ -25,8 +25,6 @@ In particular, I have an event template, I want to fill in each section of the t
 ### What is my need? Why am I the one planning this event?
 
 # Who is the event for?
-- *What are their needs in this specific moment?*
-- *Which need will this gathering address?*
 
 # Pop-up rules
 
@@ -38,19 +36,19 @@ In particular, I have an event template, I want to fill in each section of the t
 
 ```
 
-From experience, trying to fill in this template with an LLM assistant can be a bit of a mess. The LLM assistant can get off track, generate a bunch of nonsense, skip entire sections, and make up unwanted sections. 
+From experience, getting to complete a multi-part task like this one can be a bit of a mess. The LLM assistant can get off track, generate a bunch of nonsense, skip entire sections, make up unwanted sections, etc. 
 
-To help with this, I made a daisy chain of prompts. Each prompt helps with a different aspect of event planning. I use the output of each chat session to build up my event plan, and use that growing event plan as the input to the next prompt/chat session. This helps to keep the collaboration with the LLM on the rails by constraining the output of the LLM. It also allows me to tell the LLM assistant when it's off track, and to guide it back in the right direction. Finally, I can clean up the output of each chat session before using it as the input to the next prompt/chat session.
+To help with this, I made a daisy chain of prompts. Each prompt focuses on filling one part of the event plan. Each chat session builds up the event plan. I then use this growing event plan as the input to the next prompt/chat session. The advantage of this is that I can guide the LLM at each step in the right direction, and edit the content before moving on.
 
 I don't have a ChatGPT pro subscription, so instead I ended up using ChatGPT-4 API calls (specifically `gpt-4-turbo-preview`) via my note-taking app, [Obsidian](https://obsidian.md/). All of the prompts I use are available in my [LLM-gathering](https://github.com/crypdick/LLM-gathering/) repository.
 
 # Throwing a Potluck
 
-To demonstrate, let's try to throw a potluck using the LLM assistant. 
+To demonstrate, let's try to throw a potluck using the LLM assistant.
 
 ## Part 1: The purpose
 
-I'll start by filling in the first section of the template:
+The book emphasizes the importance of having a clear purpose for the event for it to be meaningful. To help define the purpose, I'll start by filling in the first section of the template:
 
 ```markdown
 # The occasion
@@ -70,7 +68,9 @@ I then feed this into my first prompt ([step1-purpose](https://github.com/crypdi
 
 # Part 2: Who is the event for?
 
-Next, I pasted in the what we have so far into the next prompt ([step2-who](https://github.com/crypdick/LLM-gathering/blob/main/step2-who.md)). The [raw output](https://gist.github.com/crypdick/0f3ccc5f5d11aebf49d9d3f082c159a4). Again, it was too wordy, so I slimmed it down. I dropped the desire to discuss healthy food choices, since it seems smug and I think we can just let the food speak for itself. I also excluded picky eaters, since they probably won't enjoy unfamiliar food.
+The book also highlights the importance of being selective on who to invite, and how that is critical for achieving the goals of the event.
+
+I pasted in what we have so far into the next prompt ([step2-who](https://github.com/crypdick/LLM-gathering/blob/main/step2-who.md)). Here is the [raw output](https://gist.github.com/crypdick/0f3ccc5f5d11aebf49d9d3f082c159a4), which was way too wordy. I dropped the desire to discuss healthy food choices, since it seems smug and I think we can just let the food speak for itself. I also excluded picky eaters, since they probably won't enjoy unfamiliar food.
 
 ```markdown
 #### For
@@ -119,35 +119,37 @@ Rules to make everyone present, promote active listening, and foster deeper conn
 
 # Part 4: Size of the event
 
-The next prompt helps us to decide on the size of the event ([step4-size](https://github.com/crypdick/LLM-gathering/blob/main/step4-size.md)). This is a bit silly to ask the LLM, since the prompt gives granular guidelines, but I am lazy so I asked it anyway. [The output](https://gist.github.com/crypdick/3fb461bb62238ad2559a497886f418c6) was way too verbose just to say "12 to 15". 
+The next prompt helps us to decide on the size of the event ([step4-size](https://github.com/crypdick/LLM-gathering/blob/main/step4-size.md)). This is a bit silly to ask the LLM, but I am lazy so I asked it anyway. [The output](https://gist.github.com/crypdick/3fb461bb62238ad2559a497886f418c6) was extremely wordy, using 1954 characters just to say "12 to 15". 
 
 ```markdown
 # Size of the event
 12 to 15 guests
 ```
 
-I am convinced OpenAI makes their LLMs excessively chatty, since they charge by the token.
+I am convinced OpenAI makes their LLMs excessively chatty, since they charge by the token...
 
 # Part 5: Invitation
 
-Finally, the fun part: the invitation. You can view the prompt [here](https://github.com/crypdick/LLM-gathering/blob/main/step5-invitation.md). I wasn't too happy with [the output](https://gist.github.com/crypdick/a2d0350b4a67eca79dcc60a49ac3aa9e), so I mixed it heavily with an invite I got from [a local event organizer](https://www.dylandavis.net/2023/09/salons-with-dylan/):
+Finally, the fun part: the invitation. You can view the prompt [here](https://github.com/crypdick/LLM-gathering/blob/main/step5-invitation.md). I wasn't too happy with [the output](https://gist.github.com/crypdick/a2d0350b4a67eca79dcc60a49ac3aa9e), so I had to manually weave in content from the previous steps into the invitation. I also cheated and borrowed from an invite I got from [a local event organizer](https://www.dylandavis.net/2023/09/salons-with-dylan/):
 
 
     # A Feast of Stories with Richard
 
     ## Purpose
-    These potlucks at my home are more than just coming together to eat. They are special gatherings designed to foster meaningful conversations over our most universal language: food. The goal is to create a space where an intimate group can truly connect, share, and learn from each other's stories and experiences. We also aim to promote well-being through healthy diets.
+
+    These potlucks at my home are more than just coming together to eat. They are special gatherings designed to foster new connections and meaningful conversations over our most universal language: food. The goal is to create a space where an intimate group can truly connect, share, and learn from each other through storytelling and cultural exchange around food. We also promote well-being through healthy food choices.
+
 
     ## Why This Gathering?
-    The intention behind these conversations is to curate a group that embodies traits like active listening, critical thinking, articulation, and vulnerability. It’s about creating a space where individuals can dive deep into conversations, bypassing the usual small talk. It's for curious souls, cultural explorers, and community builders.
+    The intention behind these potlucks is to strengthen community bonds, improve cultural understanding, and make new friends. We curate groups that embody traits like active listening, vulnerability, cultural diversity, and sharing. It’s about creating a space where individuals can dive deep into conversations, bypassing the usual small talk. It's for curious souls, cultural explorers, community builders, and people who love trying new foods.
 
     ## What to Expect?
 
     - *A Safe Space*: The gathering is a judgment-free zone that promotes open-mindedness and respect.
-
     - *Dish stories*: Each dish should have special significance to the person who brings it. This could include a memory of a loved one, a travel story, sharing a cultural tradition, or a personal connection to the dish.
     - *Commitment*: Please RSVP only if you are *sure* you can attend. If you must cancel, please inform at least 48 hours in advance.
     - *Limited Seats*: To maintain deep engagement, the gathering is limited to 15 attendees. This isn’t about exclusivity but about ensuring a meaningful experience. Attendees are chosen through a randomized raffle based on RSVPs.
+    - *A Palate Adventure*: We encourage everyone to try every dish. If you have allergies or are a picky eater, this may not be the event for you.
 
     ## Rules
 
@@ -157,6 +159,7 @@ Finally, the fun part: the invitation. You can view the prompt [here](https://gi
     - *Active Listening*: Participants are encouraged to truly listen to one another and avoid interrupting.
     - *Active Participation*: While listening is important, so is active participation! Everyone should be prepared to share and engage.
     - *Made with love*: No fast food or store-bought dishes. Each dish should be homemade with love, or from an authentic restaurant.
+    - *Healthy Choices*: We want to promote community health, so we ask that the dish your bring is not only personally significant, but is also healthy. Please avoid fried foods, excessive sugar, and processed foods.
     - *Periodic Seat Swaps*: We will switch seats to break cliques.
     - *Keep it personal*: Speak from your personal, lived experience. Avoid discussing professional life.
     - *No-shows*: If you RSVP and don't show up without notice, you will not be invited to future gatherings, out of respect for the community.
@@ -165,10 +168,9 @@ Finally, the fun part: the invitation. You can view the prompt [here](https://gi
     The rules are inspired by the book *The Art of Gathering* by Priya Parker, and by [Dylan's Salons](https://www.dylandavis.net/2023/09/salons-with-dylan/).
 
 
-
 # Part 6: Meaningful conversations
 
-I took some of the suggestions from the previous chat and used them to seed the next prompt ([step6-meaningful-convos.md](https://github.com/crypdick/LLM-gathering/blob/main/step6-meaningful-convos.md)):
+Finally, I wanted to come up with conversation starters to encourage meaningful connection. I took some of the suggestions from the previous chat and used them to seed the next prompt ([step6-meaningful-convos.md](https://github.com/crypdick/LLM-gathering/blob/main/step6-meaningful-convos.md)):
 
 ```markdown
 - **Dish Stories**: Each dish needs a story explaining its significance. This could include a memory of a loved one, an anecdote from a travel experience, sharing a cultural tradition, or a personal connection to the dish.
@@ -180,7 +182,7 @@ The initial output had some ok, but I made a few additional idea requests:
 - (after the first output) `I liked Kitchen Mishaps, Taste of Home, Recipe Wishlist, and Wellness Wins. Please come up with more conversation topics.`
 - `Suggest a few conversation topics involving travel experiences`
 
-Here is the [full chat](https://gist.github.com/crypdick/201fe370e44e70d217e252d6aac2880b). I didn't like most of the ideas, but I had enough materials to come up with some questions for the "connection question bowl":
+Here is the [full chat](https://gist.github.com/crypdick/201fe370e44e70d217e252d6aac2880b). I didn't like most of the ideas, but there were plenty of good ones for the "connection question bowl":
 
 ```markdown
 - **Kitchen Mishaps**: Share a story about a time you tried to cook a dish from another culture and it didn't go as planned. What did you learn from the experience?
