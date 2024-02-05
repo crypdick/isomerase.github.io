@@ -36,19 +36,19 @@ In particular, I have an event template, I want to fill in each section of the t
 
 ```
 
-From experience, getting to complete a multi-part task like this one can be a bit of a mess. The LLM assistant can get off track, generate a bunch of nonsense, skip entire sections, make up unwanted sections, etc. 
+From experience, getting a language model to complete a complex, multi-part task like this one can be a mess. The LLM assistant can get off track, generate a bunch of nonsense, skip entire sections, make up unwanted sections, etc. 
 
-To help with this, I made a daisy chain of prompts. Each prompt focuses on filling one part of the event plan. Each chat session builds up the event plan. I then use this growing event plan as the input to the next prompt/chat session. The advantage of this is that I can guide the LLM at each step in the right direction, and edit the content before moving on.
+To help with this, I made a daisy chain of prompts. Each prompt focuses on filling one part of the event plan. Each chat session helps fill in a section of the event template. I then use this growing event plan as the input to the next prompt/chat session. The advantage of this approach is that I can guide the LLM at each step in the right direction, and edit the content manually before moving on.
 
-I don't have a ChatGPT pro subscription, so instead I ended up using ChatGPT-4 API calls (specifically `gpt-4-turbo-preview`) via my note-taking app, [Obsidian](https://obsidian.md/). All of the prompts I use are available in my [LLM-gathering](https://github.com/crypdick/LLM-gathering/) repository.
+I ChatGPT pro access through work, but I didn't want to use it for a personal project. So instead, I used ChatGPT-4 API calls (specifically `gpt-4-turbo-preview`) via my note-taking app, [Obsidian](https://obsidian.md/). All of the prompts from this post are available in my [LLM-gathering](https://github.com/crypdick/LLM-gathering/) repository.
 
 # Throwing a Potluck
 
-To demonstrate, let's try to throw a potluck using the LLM assistant.
+To demonstrate how to throw a meaningful event, let's plan a potluck using the LLM assistant.
 
 ## Part 1: The purpose
 
-The book emphasizes the importance of having a clear purpose for the event for it to be meaningful. To help define the purpose, I'll start by filling in the first section of the template:
+The book emphasizes the importance of a clear purpose for events to be meaningful. To help define the purpose, I'll start by filling in the first section of the template:
 
 ```markdown
 # The occasion
