@@ -60,19 +60,19 @@ A potluck dinner at my house.
 
 I then feed this into my first prompt ([step1-purpose](https://github.com/crypdick/LLM-gathering/blob/main/step1-purpose.md)). [Here is the raw output](https://gist.github.com/crypdick/88d97b19d69d511936e45f2d4d556a77). The summary was too wordy, so I replied `Please summarize the summary even further. Also, add something about promoting health in the purpose.` and I was mostly happy with that output. So, I edited it lightly and filled in the next section of the template:
 
-```markdown
-# Purpose of the event
 
-* To strengthen community bonds and foster new connections in a shared, communal experience.
-* To celebrate cultural diversity and promote understanding through a storytelling and cultural exchange centered around food.
-* To encourage healthy eating by inviting participants to bring dishes that are not only personally significant but also reflect healthy food choices, enhancing the gathering's focus on well-being and communal health.
-```
+    # Purpose of the event
 
-# Part 2: Who is the event for?
+    * To strengthen community bonds and foster new connections in a shared, communal experience.
+    * To celebrate cultural diversity and promote understanding through a storytelling and cultural exchange centered around food.
+    * To encourage healthy eating by inviting participants to bring dishes that are not only personally significant but also reflect healthy food choices, enhancing the gathering's focus on well-being and communal health.
+    ```
 
-Next, I pasted in the what we have so far into the next prompt ([step2-who](https://github.com/crypdick/LLM-gathering/blob/main/step2-who.md)). The [raw output](https://gist.github.com/crypdick/0f3ccc5f5d11aebf49d9d3f082c159a4). Again, it was too wordy, so I slimmed it down. I dropped the desire to discuss healthy food choices, since it seems smug and I think we can just let the food speak for itself. I also excluded picky eaters, since they probably won't enjoy unfamiliar food.
+    # Part 2: Who is the event for?
 
-```markdown
+    Next, I pasted in the what we have so far into the next prompt ([step2-who](https://github.com/crypdick/LLM-gathering/blob/main/step2-who.md)). The [raw output](https://gist.github.com/crypdick/0f3ccc5f5d11aebf49d9d3f082c159a4). Again, it was too wordy, so I slimmed it down. I dropped the desire to discuss healthy food choices, since it seems smug and I think we can just let the food speak for itself. I also excluded picky eaters, since they probably won't enjoy unfamiliar food.
+
+
 #### For
 - People passionate about cultural diversity and willing to share their own cultural background through food.
 - People interested in strengthening community bonds and making new connections.
