@@ -1,6 +1,11 @@
 ---
 layout: post
 title: LLM Assistant for Better Gatherings
+subtitle: Using a daisy chain of prompts to plan a potluck
+cover-img: /assets/img/Bard-potluck.jpeg
+thumbnail-img: /assets/img/Bard-potluck.jpeg
+share-img: /assets/img/Bard-potluck.jpeg
+tags: [code]
 ---
 
 I wanted to share my work from an LLM hackathon hosted by [Deonna](https://github.com/deonna) and Nick from [AVL Digital Nomads](https://avldigitalnomads.org/). I recently have been reading *"[The Art of Gathering](https://www.priyaparker.com/book-art-of-gathering)"* by Priya Parker, which I recommend (see also: her [TED talk](https://www.ted.com/talks/priya_parker_3_steps_to_turn_everyday_get_togethers_into_transformative_gatherings) and [podcast](https://podcasts.apple.com/us/podcast/together-apart/id1506057555)). The goal was to create an assistant to help me brainstorm how to make events that are more meaningful and memorable.
