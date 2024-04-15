@@ -152,7 +152,7 @@ More visual intuition building for neural networks. This playlist is a bit more 
 
 ### ["Neural Networks: Zero to Hero" playlist by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
 
-This playlist is a "hackers guide" to neural networks. It has an emphasis on coding everything from scratch in pure Python, so while the code is not the fastest it is compact, easy to read, and easy to understand. This is a great resource for learning how neural networks work under the hood end-to-end. I haven't watched the whole playlist, but I've watched a few videos and they were great and the code is very clean. It has more of an emphasis on LLMs.
+This playlist is a "hackers guide" to neural networks, with special attention to language models. It codes end-to-end examples from scratch in pure Python, so while the code is not the fastest it is compact and easy to read. I haven't watched the whole playlist, but I've watched a few videos and they were great (the GPT3 from scratch was fantastic).
 
 ### ["Deep Learning" book by Ian Goodfellow et al.](https://www.deeplearningbook.org/)
 
