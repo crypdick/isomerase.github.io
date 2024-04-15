@@ -135,24 +135,16 @@ There is an MIT course that is based on this talk: ["Data-Centric AI" course by 
 ### ["Neural networks" 3Blue1Brown playlist](https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&index=1)
 
 
-
 This is a nice visual introduction to what is a neural network, as well as how backpropagation and gradient descent work. 3Blue1Brown is always great.
 
 ### ["But what is a convolution?" by 3Blue1Brown](https://www.youtube.com/watch?v=KuXjwB4LzSA)
-
-
 
 Convolutions are a key component of convolutional neural networks, which are the most popular type of neural network for computer vision. This is a nice visual introduction to what is a convolution. Another great video by 3Blue1Brown.
 
 
 ### ["Visualizing Deep Learning" playlist by vcubingx](https://www.youtube.com/watch?v=UOvPeC8WOt8&list=PLyPKqVSnetmEOp_g_hfabuRAs9ET-shl_)
 
-
 More visual intuition building for neural networks. This playlist is a bit more advanced than the 3Blue1Brown playlist, but it is still accessible for beginners.
-
-### ["Neural Networks: Zero to Hero" playlist by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
-
-This playlist is a "hackers guide" to neural networks, with special attention to language models. It codes end-to-end examples from scratch in pure Python, so while the code is not the fastest it is compact and easy to read. I haven't watched the whole playlist, but I've watched a few videos and they were great (the GPT3 from scratch was fantastic).
 
 ### ["Deep Learning" book by Ian Goodfellow et al.](https://www.deeplearningbook.org/)
 
@@ -175,8 +167,45 @@ This is a short but dense book on deep learning theory (150 pages). I haven't fi
 
 This book is available online for free or you can buy a physical copy for $10.
 
-### [Distill.pub](https://distill.pub/)
 
+### [Machine Learning Street Talk Podcast](https://www.youtube.com/playlist?list=PLwFLAA-F1Pgo_2NDWE9-l9BZ0sone8ZRY)
+
+This podcast does long 1-3 hour interviews that go into depth on more advanced topics, such as the spline theory of neural networks. I've relistened to various of these interviews, such as with [Ishan Misra](https://www.youtube.com/watch?v=EXJmodhu4_4&list=PLwFLAA-F1Pgo_2NDWE9-l9BZ0sone8ZRY&index=3&t=1241s&pp=iAQB), [Randall Balestriero](https://www.youtube.com/watch?v=86ib0sfdFtw&list=PLwFLAA-F1Pgo_2NDWE9-l9BZ0sone8ZRY&index=1&pp=iAQB), and [Simon Kornblith](https://www.youtube.com/watch?v=1EqJyMy0LnE&list=PLwFLAA-F1Pgo_2NDWE9-l9BZ0sone8ZRY&index=12&t=2407s&pp=iAQB). 
+
+## Large Language Models
+
+I split off a new section for LLMs since they are all the rage right now.
+
+### ["Neural Networks: Zero to Hero" playlist by Andrej Karpathy](https://www.youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ)
+
+This playlist is a "hackers guide" to neural networks, with special attention to language models. It codes end-to-end examples from scratch in pure Python, so while the code is not the fastest it is compact and easy to read. I haven't watched the whole playlist, but I've watched a few videos and they were great (the GPT3 from scratch was fantastic).
+
+### [Andrew Ng Practical LLM MOOCs](https://www.deeplearning.ai/short-courses/)
+
+More recently, Andrew Ng has created more beginner-friendly lectures about LLM applications.
+
+* **[short courses](https://www.deeplearning.ai/short-courses/)**: These short (~1 hour) videos look like a good introduction to various LLM concepts: vector DBs, inference, prompt engineering, validation, RLHF. The course on creating [RAG web apps](https://www.deeplearning.ai/short-courses/javascript-rag-web-apps-with-llamaindex/) looks especially interesting.
+* **[LLM MOOC](https://www.coursera.org/learn/generative-ai-with-llms)**: A week-end course that goes into a bit more depth than the short videos. Still very beginner-level.
+
+### [LLMs explained by Letitia](https://www.youtube.com/playlist?list=PLpZBeKTZRGPOz2KK3J_Y3pH81NssReJ9j)
+
+This playlist is an intermediate introduction to LLMs. It covers a bunch of topics like Low-Rank Adaptation, state space models, and transformers. 
+
+In general, the [AI Coffee Break channel](https://www.youtube.com/@AICoffeeBreak/featured) is great for intermediate-level explainers on deep-learning topics, such as graph neural networks, diffusion models, CLIP embeddings, etc.
+
+## AI Safety
+
+### [Robert Miles AI Safety](https://www.youtube.com/@RobertMilesAI)
+
+Robert Miles' channel is fantastic for beginners learning about AI safety. He does a great job of explaining the orthogonality thesis, instrumental convergence, mesa-optimizers, etc.
+
+## Mechanistic Interpretability
+
+### Neel Nanda
+
+Neel Nanda is a great person to follow in the mechinterp space. He consistenly has great content, from his interviews, [his mechinterp blog](https://www.neelnanda.io/mechanistic-interpretability), [YouTube channel](https://www.youtube.com/channel/UCBMJ0D-omcRay8dh4QT0doQ), and outrageously detailed [mechinterp glossary](https://dynalist.io/d/n2ZWtnoYHrU1s4vnFSAQ519J).
+
+### [Distill.pub](https://distill.pub/)
 
 Distill is a journal that publishes articles on machine learning. It aims to be a more visual, intuitive, and interactive vision of academic publishing for ML. The articles are extremely high quality and are a great resource for learning about advanced topics in ML. The articles have an emphasis on interpretability of ML models, deliving into the "black box" of neural networks by examining the behavior of specific circuits within the network.
 
