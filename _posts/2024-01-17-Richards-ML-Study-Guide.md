@@ -209,7 +209,9 @@ Neel Nanda is a great person to follow in the mechinterp space. He consistenly h
 
 Distill is a journal that publishes articles on machine learning. It aims to be a more visual, intuitive, and interactive vision of academic publishing for ML. The articles are extremely high quality and are a great resource for learning about advanced topics in ML. The articles have an emphasis on interpretability of ML models, deliving into the "black box" of neural networks by examining the behavior of specific circuits within the network.
 
-One of the core Distill authors, Chris Olah, also [has a blog](http://colah.github.io/) with some legendary articles.
+Their [Transformer Circuits](https://transformer-circuits.pub/2021/framework/index.html) article is one of the best I've found for deeply understanding how the residual streams work in transformers.
+
+One of the core Distill authors, Chris Olah, also [has a personal blog](http://colah.github.io/) with some legendary articles.
 
 # Advanced Research
 
