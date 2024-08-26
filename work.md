@@ -23,9 +23,10 @@ For a 1-page summary of my career, please refer to **my resume**:
 </center>
 
 For a comprehensive summary, please refer to **my CV**:
+
 <center>
 <div class="get-started-wrap">
-    <a class="btn btn-success btn-lg get-started-btn" href="https://raw.githubusercontent.com/crypdick/Decal-LaTeX-CV/master/RDecal-ML-CV.pdf">Download ML CV (pdf)</a>
+  <a class="btn btn-success btn-lg get-started-btn" href="https://raw.githubusercontent.com/crypdick/Decal-LaTeX-CV/master/RDecal-ML-CV.pdf">Download ML CV (pdf)</a>
 </div>
 </center>
 
